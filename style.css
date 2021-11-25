@@ -22,10 +22,48 @@ body {
 
 .slidecontainer {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 560px;
-    gap: 40px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .slider {
     width: 50%;
+}
+
+.random {
+    display: none;
+}
+
+label {
+    background: #C0C0C0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.hidden {
+    position: absolute;
+    left: -100vw;
+}
+.clicked {
+    border: 2px solid black;
+}
+
+#gridsize {
+    width: 20%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40px;
+    gap: 10px;
+}
+
+.buttons label {
+    display: flex;
+    align-items: center;
 }

@@ -11,12 +11,23 @@
 <body>
     <h1>etch-a-sketch</h1>
     <div class="slidecontainer">
-        <input type="range" min="1" max="50" value="16" class="slider" id="range">
-        <div id="size"></div>
+        <input type="range" min="1" max="50" value="4" class="slider" id="range">
+        <div id="gridsize"></div>
         <div class="buttons">
             <button id="clear">Clear</button>
             <button id="new-grid">New Grid</button>
-            <input id="random-color" type="checkbox">
+            <label id="random-button">
+                random-color
+                <input id="random-color" type="radio" name="color" class="hidden">
+            </label>
+            <label id="darker-button">
+                darker-color
+                <input id="darker-color" type="radio" name="color" class="hidden">
+            </label>
+            <label id="black-button">
+                black
+                <input id="black" type="radio" name="color" class="hidden">
+            </label>
         </div> 
     </div>  
     <div class="field"></div> 
